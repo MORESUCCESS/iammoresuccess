@@ -17,7 +17,7 @@ html,body{
     overflow-x: hidden;
 }
 span{
-    color: orangered;
+    color: white;
     width: 100%;
 }
 div.container{
@@ -34,15 +34,16 @@ div.tip{
 }
 header{
     width: 100%;
-    background-color: rgb(0, 255, 179);
+    background-color: rgb(0, 209, 147);
     margin: auto;
     border-bottom: 5px solid orangered;
     padding: 1.2em;
     overflow: hidden;
     position: fixed;
+    height: 8%;
 }
 header h1{
-    color: darkslategrey;
+    color:black;
     width: 100%;
     display: inline;
     font-size: 4.2vw;
@@ -65,12 +66,12 @@ ul li a{
     padding: 5px;
     padding-left: 7px;
     padding-right: 7px;
-background-color: orangered;
-border: 1px solid darkslategray;
+background-color: darkslategrey;
+border: 1px solid orangered;
 font-weight: bolder;
 }
 ul li a:hover{
-    background-color: darkslategrey;
+    background-color: orangered;
     color: white;
     font-weight: bolder;
     transition: 2s ease;
@@ -113,6 +114,11 @@ header .all{
         }
     }
     @media(max-width: 768px){
+        header{
+            height: 10%;
+        }
+    }
+    @media(max-width: 768px){
         #newsletter,.news{
             margin-right: 3em;
         }
@@ -134,7 +140,7 @@ header .all{
     }
 #first-sec{
     text-align: center;
-    margin-top: 7em;
+    margin-top: 6em;
     width: 100%;
     overflow: hidden;
     font-family: sans-serif;
@@ -146,8 +152,8 @@ header .all{
     text-shadow: 2px 2px 22px black;
     border-bottom: 5px solid orangered;
     animation: anime;
-    animation-duration: 15s;
-    animation-delay: 1s;
+    animation-duration: 25s;
+    animation-delay: 4s;
     animation-iteration-count: infinite;
 }
 @keyframes anime{
@@ -165,10 +171,11 @@ header .all{
 }
 .hold h1{
     font-size: 45px;
+    margin-top: 2em;
 }
 .buts{
     display: inline;
-    line-height: 2em;
+    line-height: 5em;
 }
 .buts a{
     text-decoration: none;
@@ -221,14 +228,6 @@ header .all{
     width: 100%;
     border-radius: 0px 60px 0px 60px;
     box-shadow: 1px 1px 20px black;
-    animation-name: animate;
-    animation-delay: 0s;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-}
-@keyframes animate{
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 .element-two{
     box-shadow: 1px 1px 20px black;
@@ -325,7 +324,7 @@ font-weight: bolder;
 }
 /**WEBPAGE FOOTER**/
 footer{
-    background-color: rgb(0, 255, 179);
+    background-color: rgb(0, 209, 147);
     color: darkslategrey;
     width: 100%;
     font-family: sans-serif;
@@ -468,26 +467,28 @@ textarea{
 /* setting the media query for the popup form so as to become responsive on moblie phones or other screens */
 @media(max-width:768px){
     #holdall{
-       margin-right: 2em;
-       margin-left: -3em;
-       width: 48vh;
-       height: 90%;
+       width: 100%;
+       height: 100%;
     }
 }
 @media(max-width:768px){
     #holdall #form h1{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 @media(max-width:768px){
     #form{
-        width: 60%;
+        width: 65%;
+        height: 30%;
+        margin: auto;
+        overflow: hidden;
     }
 }
 @media(max-width:768px){
     #form .sep{
-        position: absolute;
-        left: 71%;
+        position: relative;
+        bottom: 1em;
+        margin-left: 1em;
     }
 }
 @media(max-width:768px){
